@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>nn</title>
+    <style type="text/css">
+        #wraper{
+            background-color:#f1f1f1;
+            width: 1000px;
+             height: 2000px;
+             margin-right: 10px;
+             margin-left: 10px;
+        }
+        #head{
+            height: 100px;
+            width: 1000px;
+            background-color: powderblue;
+
+        }
+        #contaner{
+            clear: both;
+            background-color: white;
+            height: 1650px;
+            width: 800px;
+            margin-right: 100px;
+            margin-left: 100px
+        }
+        #footer{
+            height: 70px;
+            width: 1000px;
+            background-color: powderblue;
+            bottom: 0px;
+            clear: both;
+        }
+        Div{
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+
+        }
+        .form{
+             
+            margin:50px;
+        }
+        input,select{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+
+       }
+       input,select:nth-of-type(odd) {
+         background: #f1f1f1;
+   }
+   
+       input,select:nth-of-type(even) {
+     background: powderblue;
+}
+    </style>
+</head>
+<body>
+    <div id="wraper">
+        <div id="head">
+            <h1 align="center" padding="10px">Application Form</h1>
+        </div> 
+        <div id="contaner">
+            <form class="form" action="index.php" method="POST">
+                <h2>personal information</h2>
+           <label></label> First name</label>
+           <input type="text" name="txt-f-name" placeholder="enter your first name">
+           <label>Last Name</label>
+           <input type="text" name="txt-l-name" placeholder="enter your last name">
+           <label>Father Name<label>
+           <input type="text" name="txt-fa-name"placeholder="enter your father name">
+           <label>Enter CNIC</label>
+           <input type="number" name="CNIC" placeholder="Enter your CNIC">
+           <label>Enter Phone No</label>
+           <input type="number" name="phone_no" placeholder="phone no">
+           <label>Enter Address</label>
+           <input type="text" name="address" placeholder="Address">
+           <label>Female<input type="radio" name="Gender" value="female">
+           <label>Male</label>
+           <input type="radio" name="Gender" value="male">
+           <label>Email</label>
+           <input type="email" name="email" placeholder="enter email">
+           <h2> CourseName </h2>
+           <select name="course">
+             <option value="BSIT">BSIT</option>
+             <option value="BSCS">BSCS</option>
+             <option value="MSC">MSC</option>
+             <option value="msIT">msIT</option>
+             <option value="MSCS">MSCS</option>
+           </select>
+           <label> Timeing  </label>
+             Morening
+           <input type="range" name="t-range" min="morneing" max="evening">Evening
+           <label>Are you already inlored?</label>
+           <input type="checkbox" name="inrolled-chk" value="inrolled">
+           <label>subject secialization</label>
+           <select>
+               <option value="Web">Web</option>
+               <optio value="Networks">Networks</option>
+               <option value="securites">securites</option>
+               <option value="database">database</option>
+               
+           </select>
+    
+            <h2>Qulification</h2>
+           <label>MASTER</label>
+               <select>
+               <option>Msc</option>
+               <option>Bs</option>
+               <option>BS honers</option>
+                   </SELECT>
+           </select>
+           <label>BACHLORES</label>
+               <SELECT>
+               <option value="ba">ba</option>
+               <option value="bsc">bsc</option>
+               <option value="b.com">b.com</option>
+               <option value="bba">bba</option>
+               <option value="arabic diploma">arabic diploma</option>
+           </SELECT>
+           <label>INTERMADIAT</label><SELECT>	
+               <option value="F.A">F.a</option>
+               <option value="FSC">FSC</option>
+               <option value="F.AIT">F.AIT</option>
+               <option value="ICS">ICS</option>
+               <option>I.COM</option>
+           </SELECT>
+
+           <h2>Why we select you?</h2>
+           <textarea name="txt-area" rows="5" cols="20"></textarea>
+       </div>
+       <input type="submit" value="submit">
+            </form>
+        </div>
+
+        <div id="footer"><h2 align="center">THIS IS A FOOTER</h2></div>
+        
+    </div>
+
+</body>
+</html>
